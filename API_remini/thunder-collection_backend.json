@@ -1,0 +1,294 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "backend",
+    "collectionId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+    "dateExported": "2024-11-11T19:09:47.943Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "260d1fe7-5507-4b4c-8aac-7dac29ae774a",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/caracteristicas",
+            "url": "http://127.0.0.1:8000/api/jugadores/actualizar/datos/otros",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2024-11-11T19:04:15.860Z",
+            "modified": "2024-11-11T19:04:15.860Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"caracteristicas\": [\n    {\n      \"id\": 25,\n      \"caracteristica\": \"Musculatura\",\n      \"p_base\": 12,\n      \"bonificador\": 2,\n      \"b_competencia\": 3,\n      \"suma_lado\": 12\n    },\n    {\n      \"id\": 26,\n      \"caracteristica\": \"Puntería\",\n      \"p_base\": 2,\n      \"bonificador\": 5,\n      \"b_competencia\": -3,\n      \"suma_lado\": 23\n    },\n    {\n      \"id\": 27,\n      \"caracteristica\": \"Salud\",\n      \"p_base\": 12,\n      \"bonificador\": 12,\n      \"b_competencia\": 23,\n      \"suma_lado\": 0\n    },\n    {\n      \"id\": 28,\n      \"caracteristica\": \"Lógica\",\n      \"p_base\": 0,\n      \"bonificador\": 10,\n      \"b_competencia\": 0,\n      \"suma_lado\": 11\n    },\n    {\n      \"id\": 29,\n      \"caracteristica\": \"Intuición\",\n      \"p_base\":43,\n      \"bonificador\": 0,\n      \"b_competencia\": 23,\n      \"suma_lado\": 0\n    },\n    {\n      \"id\": 30,\n      \"caracteristica\": \"Verborrea\",\n      \"p_base\": 0,\n      \"bonificador\": 34,\n      \"b_competencia\": 0,\n      \"suma_lado\": 12\n    }\n  ],\n  \"habilidades\": [\n    {\n      \"id\": 29,\n      \"habilidad\": \"Torbellino de Espadas\",\n      \"bloqueado\": 1\n    },\n    {\n      \"id\": 30,\n      \"habilidad\": \"Reflejos Felinos\",\n      \"bloqueado\": 1\n    },\n    {\n      \"id\": 31,\n      \"habilidad\": \"Maestro de Armas\",\n      \"bloqueado\": 1\n    },\n    {\n      \"id\": 32,\n      \"habilidad\": \"Espada Llameante\",\n      \"bloqueado\": 0\n    },\n    {\n      \"id\": 33,\n      \"habilidad\": \"Golpe de Sangre\",\n      \"bloqueado\": 0\n    },\n    {\n      \"id\": 34,\n      \"habilidad\": \"Flecha Explosiva\",\n      \"bloqueado\": 0\n    },\n    {\n      \"id\": 35,\n      \"habilidad\": \"Curación Rápida\",\n      \"bloqueado\": 1\n    }\n  ],\n  \"equipamientos\": [\n    {\n      \"id\": 1,\n      \"habilitado\": 0\n    },\n    {\n      \"id\": 2,\n      \"habilitado\": 1\n    },\n    {\n      \"id\": 3,\n      \"habilitado\": 0\n    },\n    {\n      \"id\": 4,\n      \"habilitado\": 0\n    },\n    {\n      \"id\": 5,\n      \"habilitado\": 1\n    },\n    {\n      \"id\": 6,\n      \"habilitado\": 0\n    },\n    {\n      \"id\": 7,\n      \"habilitado\": 1\n    },\n    {\n      \"id\": 8,\n      \"habilitado\": 0\n    },\n    {\n      \"id\": 9,\n      \"habilitado\": 0\n    }\n  ]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bef41f9b-c3b7-41ab-b765-6e09d192517b",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/login",
+            "url": "http://127.0.0.1:8000/api/usuarios/verificar",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-11-11T19:04:39.516Z",
+            "modified": "2024-11-11T19:04:39.516Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": \"master1\",\n  \"clave\": \"user\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "696f1a7e-0f0c-428e-b6c8-2baad038f57c",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/jugadores",
+            "url": "http://127.0.0.1:8000/api/jugadores/12",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-11T19:04:51.446Z",
+            "modified": "2024-11-11T19:04:51.446Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "153e172f-1887-4312-9ef3-fdd340f50dc5",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/jugadoresCono",
+            "url": "http://127.0.0.1:8000/api/jugadores/conocidos/datos",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-11-11T19:05:04.810Z",
+            "modified": "2024-11-11T19:05:04.810Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_sala\": 4,\n  \"id_jugador\": 12\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "debe8dbf-7bdb-480e-b10f-7da9ab9d9d1e",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/ingresar",
+            "url": "http://127.0.0.1:8000/api/jugadores/salas/7",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-11-11T19:05:26.354Z",
+            "modified": "2024-11-11T19:05:26.354Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "6f83228c-9203-47d8-9724-894cf1514d93",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/options",
+            "url": "http://127.0.0.1:8000/api/salas",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-11-11T19:05:38.848Z",
+            "modified": "2024-11-11T19:05:38.848Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"musica\": 0,\n  \"sonido\": 1,\n  \"brillo\": 50,\n  \"cant_jugadores\": 3,\n  \"id_usuario\": 23\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "471cc74a-9c3b-4024-83b9-454568f431e3",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/usuarios",
+            "url": "http://127.0.0.1:8000/api/usuarios",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-11-11T19:05:48.782Z",
+            "modified": "2024-11-11T19:05:48.782Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"usuario\": \"master10\",\n  \"clave\": \"user\",\n  \"correo\": \"mich@gmail.com\",\n  \"rol\": \"Master\",\n  \"avatar\": \"url_del_avatar\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "eb109098-2ab0-4d37-9711-49aa1b182e99",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/jugadoresDatos",
+            "url": "http://127.0.0.1:8000/api/jugadores/actualizar/datos",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-11-11T19:05:57.581Z",
+            "modified": "2024-11-11T19:05:57.581Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 12,\n  \"alias\": \"jualano\",\n  \"edad\": 20,\n  \"altura\": 120,\n  \"nivel\": 12,\n  \"bon_competencias\": 2,\n  \"id_usuario\": 16,\n  \"bloqueo\": {\n    \"id\": 5,\n    \"base\": -12,\n    \"constitucion\": 9,\n    \"item\": 12,\n    \"total\": 9,\n    \"id_jugador\": 12\n  },\n  \"hit_point\": {\n    \"id\": 5,\n    \"base\": 5,\n    \"daño_sufrido\": 5,\n    \"total\": 10,\n    \"id_jugador\": 12\n  },\n  \"esquivar\": {\n    \"id\": 5,\n    \"base\": 3,\n    \"destreza\": 3,\n    \"item\": 3,\n    \"total\": 9,\n    \"id_jugador\": 12\n  },\n  \"ataque\": {\n    \"id\": 5,\n    \"caracteristica\": -1,\n    \"habilidad\": 2,\n    \"item\": 1,\n    \"total\": 2,\n    \"id_jugador\": 12\n  }\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f13ad297-6018-450f-a159-e0695d560ce3",
+            "colId": "c222ba32-f75b-4332-93dc-ec33ae9d88b3",
+            "containerId": "",
+            "name": "http://127.0.0.1:8000/cantidadJugadores",
+            "url": "http://127.0.0.1:8000/api/cantidad/jugadores",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-11-11T19:06:07.629Z",
+            "modified": "2024-11-11T19:06:07.629Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        }
+    ],
+    "ref": "VjJ0AdwNk0azgvckOnHMFBUEpi3_IyFuh5F1D3gr9DkEesPN0rDxSIxYYqEypcwzxFaFnn_hu4jkz33fGAiL7A"
+}
