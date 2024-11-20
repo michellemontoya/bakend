@@ -103,12 +103,18 @@ class UsuarioController extends Controller
         if ($usuario && Hash::check($validatedData['clave'], $usuario->clave)) {
             if ($usuario['rol'] == "Jugador") {
                 $sala = DB::table('salas_jugadores')
-                ->join('jugadores', 'salas_jugadores.id_jugador', '=', 'jugadores.id')
+                ->leftJoin('jugadores', 'salas_jugadores.id_jugador', '=', 'jugadores.id')
                 ->join('usuarios', 'jugadores.id_usuario', '=', 'usuarios.id')
                 ->where('usuarios.id', $usuario->id)
                 ->select('salas_jugadores.id_sala')
                 ->first();
-                $usuario['id_sala'] = $sala->id_sala;
+                $jugadores = DB::table('jugadores')
+                ->join('usuarios', 'jugadores.id_usuario', '=', 'usuarios.id')
+                ->where('usuarios.id', $usuario->id)
+                ->select('jugadores.id')
+                ->first();
+                $usuario['id_sala'] = $sala ? $sala->id_sala : null;
+                $usuario['id_jugador'] = $jugadores ? $jugadores->id : null;
             }else{
                 $sala = DB::table('salas')
                 ->where('salas.id_usuario', $usuario->id)

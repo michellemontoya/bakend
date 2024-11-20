@@ -95,15 +95,15 @@ class JugadorController extends Controller
             $habilidad = Habilidad::create(["habilidad"=>"Flecha Explosiva","bloqueado"=>0, "id_jugador"=>  $jugador->id]);
             $habilidad = Habilidad::create(["habilidad"=>"Curación Rápida","bloqueado"=>0, "id_jugador"=>  $jugador->id]);
 
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/arcoFlechas.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/armadura.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/bolsamoney.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/diamante.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/espada.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/mapa.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/pocimarosa.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/posion.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
-            $equipamiento = Equipamiento::create(["equipo"=>"http://localhost:4200/assets/p1.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://png.pngtree.com/png-clipart/20220131/original/pngtree-ancient-bow-and-arrow-flat-design-png-image_7258252.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://cdn.pixabay.com/photo/2020/10/29/01/58/knight-5694979_1280.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://png.pngtree.com/png-clipart/20230524/original/pngtree-money-bag-vector-png-image_9168976.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://images.vexels.com/content/151592/preview/blue-diamond-flat-icon-2f1961.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://png.pngtree.com/png-clipart/20220620/original/pngtree-sword-cartoon-illustration-design-png-image_8132150.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://images.vexels.com/media/users/3/207228/isolated/preview/affec54749806d2752556ed7e77378c6-mapa-de-ubicacion-colorido-icono-trazo.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://images.vexels.com/media/users/3/285777/isolated/preview/9b74ab55e037b80ee57bba056c315045-pocia-n-rosa-brillante.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://static.vecteezy.com/system/resources/previews/028/286/528/non_2x/a-green-potion-png.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
+            $equipamiento = Equipamiento::create(["equipo"=>"https://png.pngtree.com/png-clipart/20230407/original/pngtree-medieval-knight-shield-on-transparent-background-png-image_9032949.png","habilitado"=>0, "id_jugador"=>  $jugador->id]);
 
             return response()->json($jugador, 201);
 
